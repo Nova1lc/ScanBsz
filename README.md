@@ -2,6 +2,9 @@
 
 Un escaneo de IP con vulnerabilidad para examinar una red en busca de dispositivos activos y determinar si presentan vulnerabilidades conocidas este tipo de escaneo se lleva a cabo con el fin de identificar posibles puntos débiles en la seguridad de la red y tomar medidas correctivas para mitigar los riesgos.
 
+Nota: No nos hacemos responsables del mal uso que le den
+
+
 cd ScanBsz
 
 
