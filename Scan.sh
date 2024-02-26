@@ -20,7 +20,7 @@ ip=$1
 
 # Escanea los puertos utilizando nmap
 echo "Escaneando puertos en $ip..."
-nmap_output=$(nmap -p- --open $ip)
+nmap_output=$(nmap -p-  --open $ip)
 
 # Filtra los puertos abiertos
 open_ports=$(echo "$nmap_output" | grep -E '^[0-9]+/tcp' | cut -d '/' -f 1 | tr '\n' ',' | sed 's/,$//')
@@ -38,3 +38,4 @@ nmap_vulners_output=$(nmap -sV --script vulners -p $open_ports $ip)
 
 echo "Resultados del escaneo de vulnerabilidades:"
 echo "$nmap_vulners_output"
+
